@@ -3,12 +3,12 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_ignore_empty=True)
 
-    API_ID: int
-    API_HASH: str
+    API_ID: 26584958
+    API_HASH: 'ba30d1f3e9c4977317b7db564ccfa6b9'
 
     USE_REF: bool = True
-    REF_ID: str = 'f355876562'
-    PERCENT_OF_REFERRALS_FOR_CREATORS_OF_THE_SOFT: int = 15
+    REF_ID: str = 'f789887228'
+    PERCENT_OF_REFERRALS_FOR_CREATORS_OF_THE_SOFT: int = 0
 
     USE_RANDOM_DELAY_IN_RUN: bool = True
     RANDOM_DELAY_IN_RUN: list[int] = [5, 60]
@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     SQUAD_SLUG: str = 'notpixel_raiders'
 
     DISABLE_IN_NIGHT: bool = False
-    NIGHT_TIME: list[int] = [23, 6]
+    NIGHT_TIME: list[int] = [24, 6]
 
     ENABLE_SOCKETS: bool = False
     ENABLE_RANDOM_CUSTOM_TEMPLATE: bool = True
